@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abastecimento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Abastecimento</h1>
+
+        <p>Escolha o tipo de combustível</p>
+
+        <ul>
+            <li>Gasolina: R$ 6,69</li>
+            <li>Etanol: R$ 5,80</li>
+            <li>Diesel: R$ 6,20</li>
+        </ul>
+
+        <form id="formCombustivel">
+            <label for="combustivel">Tipo de Combustível</label>
+            <select name="combustivel" id="combustivel">
+                <option value="">Selecione a opção</option>
+                <option value="gasolina">Gasolina</option>
+                <option value="etanol">Etanol</option>
+                <option value="diesel">Diesel</option>
+            </select>
+
+            <label for="litros">Quantidade (litros)</label>
+            <input type="number" id="litros" step="0.1" min="0" placeholder="Digite a quantidade">
+        </form>
+
+        <h2>Resultado</h2>
+        <p id="resultado">R$ 0,00</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
